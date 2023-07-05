@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add A Company</title>
+</head>
+<body>
+    <form action="/addacompany" method="post">
+        {% csrf_token %}
+        <h3>Company Name: <input type="text" name="company_name"></h3>
+        <h3>Company Logo:<input type="text" name="logo_company"> </h3>
+        
+        <button type="submit">Add a company</button>
+    </form>
+</body>
+</html>
